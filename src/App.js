@@ -1,12 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-import { Routes, Route } from "react-router-dom"
-import Home from './Home';
 
+import Home from "./Components/Home";
+import { Routes, Route } from "react-router-dom";
+import { TopNavigationBar } from "./Components/NavigationBar"
+import "./Styles/Home.scss"
 function App() {
   return (
-    <div>
-      <h1>Hello</h1>
+    <div className="app-container">
+      <TopNavigationBar />
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>

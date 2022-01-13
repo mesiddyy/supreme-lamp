@@ -1,0 +1,14 @@
+.top-nav-container{
+    height:8%;
+    background-color: aquamarine;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    justify-content: center;
+    h4{
+        color:rgb(255, 0, 0);
+        font-size: larger;
+    }
+}
