@@ -7,7 +7,21 @@ import Youtube from "./info";
 
 const Simple = () => {
     return (
-        <div>
+        <div className="home-container">
+            <div className="home-services">
+                <div className="item">
+                    Book
+                </div>
+                <div className="item">
+                    View
+                </div>
+                <div className="item">
+                    Help
+                </div>
+                <div className="item">
+                    FAQ
+                </div>
+            </div>
             <div className="frontpage-banner">
                 <BannerCarousel />
             </div>

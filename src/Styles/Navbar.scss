@@ -1,6 +1,7 @@
 .top-nav-container{
     height:8%;
-    background-color: rgb(44, 44, 44);
+    // background-color: rgb(44, 44, 44);
+    background-color: #2874f0;
     width: 90%;
     position: relative;
     display: flex;
@@ -9,7 +10,7 @@
     justify-content: space-between;
     padding: 0 5%;
     h4{
-        color:rgb(255, 0, 0);
+        color: white;
         font-size: larger;
     }
 }
