@@ -2,6 +2,7 @@ import "react-multi-carousel/lib/styles.css";
 import Carousel from "react-multi-carousel";
 import { Responsive } from "./Common/Constants/Constants";
 import { Images } from "./Common/Images/images";
+import Skeleton from '@mui/material/Skeleton';
 
 const BannerCarousel = () => {
     return (
@@ -16,30 +17,12 @@ const BannerCarousel = () => {
         >
             {Images.map(image => {
                 return (
-                    <div>
-                        <img
-                            draggable={false}
-                            alt="text"
-                            style={{ width: "100%", height: "100%" }}
-                            src={image.image}
-                        />
-                        <span
-                            style={{
-                                position: "absolute",
-                                zIndex: 5,
-                                top: 0,
-                                left: 0,
-                                bottom: 0,
-                                right: 0,
-                                display: "flex",
-                                justifyContent: "center",
-                                alignItems: "center",
-                                textShadow: "2px 2px #ffffff"
-                            }}
-                        >
-                            {image.text}
-                        </span>
-                    </div>
+                    <img
+                        draggable={false}
+                        alt="text"
+                        style={{ width: "100%", height: "100%" }}
+                        src={image.image}
+                    />
                 );
             })}
         </Carousel>);

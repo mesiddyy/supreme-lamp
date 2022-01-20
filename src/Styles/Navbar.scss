@@ -1,12 +1,13 @@
 .top-nav-container{
     height:8%;
-    background-color: aquamarine;
-    width: 100%;
+    background-color: rgb(44, 44, 44);
+    width: 90%;
     position: relative;
     display: flex;
     align-items: center;
     z-index: 10;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0 5%;
     h4{
         color:rgb(255, 0, 0);
         font-size: larger;
