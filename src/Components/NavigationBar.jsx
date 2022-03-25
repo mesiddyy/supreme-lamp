@@ -9,7 +9,7 @@ export const TopNavigationBar = () => {
             <IconButton aria-label="menu">
                 <MenuIcon style={{ color: "white" }} />
             </IconButton>
-            <h4>Supreme-Lamp</h4>
+            <h4 style={{ cursor: "pointer" }} onClick={() => window.location.pathname = "/"}>Supreme-Lamp</h4>
             <IconButton aria-label="menu">
                 <AccountCircleIcon style={{ color: "white" }} />
             </IconButton>
