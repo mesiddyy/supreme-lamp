@@ -9,8 +9,8 @@ function App() {
     <div className="app-container">
       <TopNavigationBar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Tiles" element={<Tiles />} />
+        {/* <Route path="/" element={<Home />} /> */}
+        <Route path="/" element={<Tiles />} />
       </Routes>
     </div>
   )
