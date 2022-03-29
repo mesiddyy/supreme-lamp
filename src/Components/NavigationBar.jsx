@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 
 export const TopNavigationBar = () => {
     return (
-        <div className="top-nav-container" style={{ backgroundImage: 'url(' + require('./images/nikhil1.jpg') + ')' }}>
+        <div className="top-nav-container" style={{ backgroundImage: 'url(' + require('./nikhil1.jpg') + ')' }}>
             <h4 style={{ cursor: "pointer" }}>HAPPY</h4>
             <h4 style={{ cursor: "pointer" }}>BIRTHDAY</h4>
             <h4 style={{ cursor: "pointer" }}>KRITIKA!!</h4>
@@ -15,7 +15,7 @@ export const TopNavigationBar = () => {
 
 export const BottomNavigationBar = () => {
     return (
-        <div className="top-nav-container" style={{ backgroundImage: 'url(' + require('./images/nikhil17.jpg') + ')' }}>
+        <div className="top-nav-container" style={{ backgroundImage: 'url(' + require('./nikhil17.jpg') + ')' }}>
 
             <h5 style={{ cursor: "pointer", fontSize: 34 }}>A wish for you on your birthday, whatever you ask may you receive, whatever you seek may you find, whatever you wish may it be fulfilled on your birthday and always. Happy birthday!</h5>
             <p style={{ position: "absolute", bottom: 2 }}>Swipe Up</p>

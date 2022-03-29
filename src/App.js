@@ -1,5 +1,4 @@
 
-import Home from "./Components/Home";
 import { Routes, Route } from "react-router-dom";
 import { TopNavigationBar, BottomNavigationBar } from "./Components/NavigationBar"
 import "./Styles/Home.scss"
