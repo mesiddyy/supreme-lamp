@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Carousel from "react-multi-carousel";
 import "../Styles/Tiles.scss";
-import Sound from "react-sound"
+import { Player } from "./NavigationBar"
 const responsive = {
     largeDesktop: {
         breakpoint: { max: 4000, min: 1228 },
@@ -45,6 +45,7 @@ const Tiles = () => {
     }
     return (
         <div className="carousel-container">
+            <Player url={"https://wishesplus.com/wp-content/uploads/2021/02/Happy-Birthday-To-You-Happy-Birthday-Songs-2021-WishesPlus.com_.mp3"} />
             <Carousel
                 responsive={responsive}
                 swipeable={true}
