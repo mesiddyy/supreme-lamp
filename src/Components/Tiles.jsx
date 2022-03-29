@@ -44,29 +44,31 @@ const Tiles = () => {
         const fileName = imageName.split("/")[3].split(".")[0];
     }
     return (
-        <Carousel
-            responsive={responsive}
-            swipeable={true}
-            draggable={true}
-            partialVisbile={true}
+        <div className="carousel-container">
+            <Carousel
+                responsive={responsive}
+                swipeable={true}
+                draggable={true}
+                partialVisbile={true}
+                // itemClass="carousel-item-padding-40-px"
+                ssr={true} // means to render carousel on server-side.
+                infinite={true}
+                autoPlay={true}
+                keyBoardControl={true}
+                autoPlaySpeed={2000}
+                containerClass="carousel-container"
+                dotListClass="custom-dot-list-style"
+                tabIndex={-1}
+            >
+                {nikhilImages.map((item, i) =>
+                    <div className="banner-container" onClick={() => handleClick(item)} key={i}>
+                        <img src={item} />
+                    </div>
+                )}
+            </Carousel>
 
-            // itemClass="carousel-item-padding-40-px"
-            ssr={true} // means to render carousel on server-side.
-            infinite={true}
-            // autoPlay={true}
-            keyBoardControl={true}
-            // autoPlaySpeed={5000}
-            // transitionDuration={6000}
-            containerClass="carousel-container"
-            dotListClass="custom-dot-list-style"
-            tabIndex={-1}
-        >
-            {nikhilImages.map((item, i) =>
-                <div className="banner-container" onClick={() => handleClick(item)} key={i}>
-                    <img src={item} />
-                </div>
-            )}
-        </Carousel>
+        </div>
+
     )
 }
 
