@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Carousel from "react-multi-carousel";
 import "../Styles/Tiles.scss";
-
+import Sound from "react-sound"
 const responsive = {
     largeDesktop: {
         breakpoint: { max: 4000, min: 1228 },
