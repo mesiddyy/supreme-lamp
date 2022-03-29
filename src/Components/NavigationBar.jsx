@@ -6,7 +6,8 @@ export const TopNavigationBar = () => {
         <div className="top-nav-container" style={{ backgroundImage: 'url(' + require('./images/nikhil1.jpg') + ')' }}>
             <h4 style={{ cursor: "pointer" }}>HAPPY</h4>
             <h4 style={{ cursor: "pointer" }}>BIRTHDAY</h4>
-            <h4 style={{ cursor: "pointer" }}>KRITIKA</h4>
+            <h4 style={{ cursor: "pointer" }}>KRITIKA!!</h4>
+            <h4 style={{ cursor: "pointer", fontSize: 20 }}>(SPECIAL EDUCATOR)</h4>
             <p style={{ position: "absolute", bottom: 2 }}>Swipe Up</p>
         </div>
     )
