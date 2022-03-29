@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+$mainColor: #72b6eb;
+$animationTime: 60s;
+
+.banner-container{
+  width: 100%;
+  height:70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:2%;
+  font-family: 'Handlee', cursive;
+}
+.tiles-blue{
+      .window {  
+        width: 98%;  
+        height: 100%;
+        margin: 1em auto;
+        font-size: 2vw;
+        border-radius: .5em; 
+        background: lighten($mainColor, 5%);
+        // box-shadow:  .25em .25em .6em darken($mainColor, 7%),
+                    // -.25em -.25em .6em lighten($mainColor, 9%);
+      }
+      
+      img{
+        width:200px;
+        height:300px;
+      }
+      .tiles {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        
+        &__container {
+          position: relative;
+          height: 120%;
+          flex-direction: column;
+          overflow: hidden;
+        }
+        
+        &__wrapper {
+          position: relative;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          height: auto;
+        }
+        
+        &__animation {
+          animation: moveTiles $animationTime linear infinite;
+        }
+        
+        @keyframes moveTiles { 
+        0% { 
+          transform: translateY(0); 
+        } 
+      
+        100% {
+          transform: translateY(-100%); 
+       }
+      }
+        
+        &__item {
+          position: relative;
+          background: lighten($mainColor, 15%);
+          background: linear-gradient(135deg, rgba(lighten($mainColor, 4%),1) 0%, rgba(lighten($mainColor, 30%),1) 100%); 
+          color: $mainColor;
+          overflow: hidden;
+          box-sizing: border-box;
+          width: 30%;
+          margin: 1.5%;
+          border-radius: .5em;
+          box-shadow: -.15em -.15em .25em rgba(darken($mainColor, 25%), .25),      -1px -1px 1px rgba(darken($mainColor, 25%), .15);
+          padding: 1em;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all .25s ease-in-out;
+          &:hover {
+            transform: scale(1.05);
+            box-shadow: -.25em -.25em .35em rgba(darken($mainColor, 25%), .25),      -1px -1px 1px rgba(darken($mainColor, 25%), .15);
+          }
+        }
+      }
+}

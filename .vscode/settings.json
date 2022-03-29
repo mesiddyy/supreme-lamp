@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/30e18bd1-e45a-40e9-84c6-f3e10cb75410/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/supreme-lamp",
+    "appService.deploySubpath": "."
+}
